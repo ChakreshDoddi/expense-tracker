@@ -12,7 +12,6 @@ public class ExpenseStore {
 
     public List<Expense> load() {
         try {
-            System.out.println("Testing git");
             if (!Files.exists(file)) return new ArrayList<>();
             List<String> lines = Files.readAllLines(file);
             List<Expense> out = new ArrayList<>();
